@@ -1,4 +1,22 @@
+v0.9.7 (2014-02-15)
+- 6e7c8f7c: fixes #92: allow handlers given via CLI to be resolved relative to CWD
+- 13a9addb: fixes #91: add amd support through --amd flag
+- bd0a55fd: update dependencies
+
+v0.9.6 (2014-02-07)
+- 2df23977: Version 0.9.6
+- 42e5c876: rebuild using new CSR version
+- 05019b93: Merge pull request #90 from Constellation/update-es-tools
+- 3722ced1: Update esmangle and escodegen
+
+v0.9.5 (2014-01-21)
+- 4e9a9e29: Version 0.9.5
+- ad84e452: update to CoffeeScriptRedux version 2.0.0-beta8
+- b3ae6ebd: fixes #87: resolve core modules consistently
+- 9f41e754: update some dependency specifications
+
 v0.9.4 (2013-09-15)
+- c89df52b: Version 0.9.4
 - 7d969b72: fixes #81: improve documentation for aliasing
 - 58fc9a7c: update dependency versions
 - 65819399: remove some unnecessary parentheses

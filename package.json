@@ -1,6 +1,6 @@
 {
   "name": "commonjs-everywhere",
-  "version": "0.9.4",
+  "version": "0.9.7",
   "description": "CommonJS browser bundler with aliasing, extensibility, and source maps from the minified JS bundle",
   "homepage": "https://github.com/michaelficarra/commonjs-everywhere",
   "keywords": [
@@ -26,22 +26,25 @@
     "node": "0.8.x || 0.9.x || 0.10.x"
   },
   "main": "lib/module",
+  "bin": {
+    "cjsify": "./bin/cjsify"
+  },
   "directories": {
     "bin": "bin",
     "lib": "lib",
     "test": "test"
   },
   "dependencies": {
-    "Base64": "~0.1.2",
-    "coffee-script-redux": "2.0.0-beta7",
-    "escodegen": "~0.0.24",
-    "esmangle": "~0.0.10",
-    "esprima": "~1.0.2",
-    "estraverse": "1.3.x",
-    "MD5": "1.x.x",
-    "mktemp": "~0.3.0",
+    "Base64": "0.2.x",
+    "coffee-script-redux": "2.0.0-beta8",
+    "esprima": "1.x.x",
+    "estraverse": "1.5.x",
+    "escodegen": "1.2.x",
+    "esmangle": "~1.0.0",
+    "MD5": "~1.2",
+    "mktemp": "0.3.x",
     "nopt": "~2.1.2",
-    "resolve": "0.5.x",
+    "resolve": "0.6.x",
     "buffer-browserify": "*",
     "constants-browserify": ">= 0.0.1",
     "crypto-browserify": "*",
@@ -50,12 +53,13 @@
     "punycode": "*",
     "querystring": "*",
     "vm-browserify": "*",
-    "zlib-browserify": "*"
+    "browserify-zlib": "*"
   },
   "devDependencies": {
-    "mocha": "~1.8.1",
+    "coffee-script-redux": "2.0.0-beta8",
+    "mocha": "~1.14.0",
     "scopedfs": "~0.1.0",
-    "semver": "~1.1.4"
+    "semver": "~2.2.1"
   },
   "scripts": {
     "test": "make test"
